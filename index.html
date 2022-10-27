@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lcar Automotivos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div><!--LOGO-->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a style="color: White; border-bottom: 1px solid white" href="">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav><!--DESKTOP-->
+
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div><!--CONTAINER-->
+    </header><!--MENUS-->
+    <section class="banner">
+        <div class="container">
+            <div class="text-banner">
+                <div class="text-banner-single">Locação</div>
+                <div class="text-banner-single">Compra</div>
+                <div class="text-banner-single">Venda</div>
+            </div>
+            <div class="clear"></div>
+        </div><!--CONTAINER-->
+    </section><!--BANNER_PRINCIPAL-->
+
+    <section class="veiculos-destaque" >
+        <h2>Veículos em Destaque</h2>
+        <div class="container-section">
+            <div class="vitrine-destaque" id="redbull">
+                <div style="background-image: url('images/mclarenMp4.png');"class="carro-img"></div>
+                    <div class="info-carro">
+                    <h2>Mclaren Honda MP4/4 - Ayrton Senna</h2>
+                    <p>R$ 17.400.000</p>
+                    <a href="venda.html">Mais Detalhes</a>
+                </div>
+            </div><!--VITRINE-DESTAQUE-->
+
+            <div class="vitrine-destaque" id="mercedes">
+                <div style="background-image: url('images/merbenzw13.png');"class="carro-img"></div>
+                    <div class="info-carro">
+                    <h2>Mercesdes Benz W13 - Lewis Hamilton</h2>
+                    <p>R$ 90.000.000</p>
+                    <a href="venda.html">Mais Detalhes</a>
+                </div>
+            </div><!--VITRINE-DESTAQUE-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('images/ferrari643.png');"class="carro-img"></div>
+                    <div class="info-carro">
+                    <h2>Ferrari F1 643 - Jean Alesi</h2>
+                    <p>R$ 1.850.000</p>
+                    <a href="venda.html">Mais Detalhes</a>
+                </div>
+            </div><!--VITRINE-DESTAQUE-->
+        </div><!--CONTAINER-->
+    </section><!--VEICULOS-DESTAQUE-->
+
+    <section class="servicos-descricao" >
+        <div class="half1">
+            <div class="half1-wraper">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Compra</li>
+                    <li>Venda</li>
+                    <li>Consultoria</li>
+                    <li>Locação</li>
+                </ul>
+                <a href="#contato">Contratar</a>
+            </div><!--HALF1-WRAPER-->
+        </div><!--HALF1-->
+        
+        <div class="half2">
+            <h2>Depoimentos</h2>
+            <div class="depoimento-single">
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui repellat, illum molestiae ipsam neque explicabo. Earum consequatur eveniet eligendi non sequi eos expedita odit perspiciatis reprehenderit enim, doloribus laudantium culpa."
+                <span class="nome-depoimento">João Henrique</span>
+                </p>
+                
+
+                <p>"sit amet consectetur adipisicing elit. Qui repellat, illum molestiae ipsam neque explicabo. Earum consequatur eveniet eligendi non sequi culpa. non sequi eos expedita odit perspiciatis, elit. Qui repellat, illum molestiae ipsam neque explicabo"
+                    <span class="nome-depoimento">Mario Sergio</span>
+                </p>
+
+                <p>"Quod, doloribus. Aliquid excepturi saepe molestiae sapiente laboriosam. Aperiam dolore quam, impedit voluptate dicta ut pariatur, ad molestiae, provident maxime placeat consequatur, Lorem ipsum dolor sit amet consectetur adipisicing elit.!."
+                    <span class="nome-depoimento">Fausto Silva</span>
+                </p>
+            </div>
+
+            <div class="navigation">
+                <div class="arrows">
+                    <img prev src="images/arrow-left.png" style="width: 15px; height: 15px;" >
+                    <img next src="images/arrow-right.png" style="width: 15px; height: 15px;">
+                </div><!--ARROWS-->
+            </div><!--NAVIGATION-->
+        </div><!--HALF2-->
+    </section><!--SERVICOS_DEPOIMENTOS-->
+
+    <section id="contato" class="contato" >
+        <h2>Contato</h2>
+
+        <form action="">
+            <div class="input-wraper w100">
+                <input type="text" name="Nome" placeholder="Nome" required>
+            </div>
+
+            <div class="input-wraper w50">
+                <input type="text" name="E-mail" placeholder="E-mail" required>
+            </div>
+
+            <div class="input-wraper w50">
+                <input type="text" name="Telefone" placeholder="Telefone" required>
+            </div>
+
+            <div class="input-wraper w100">
+                <textarea placeholder="Mensagem"></textarea>
+            </div>
+
+            <div class="input-wraper">
+                <input type="submit" value="Enviar">
+            </div>
+
+            <div class="cle"></div>
+
+        </form>
+    </section><!--CONTATO-->
+    <footer>
+        <div class="container-social">
+            <p>Desenvolvido por: Luiz Henrique Silva - 2022</p>
+            <a href="https://www.linkedin.com/in/luiz-henrique-silva-a487a7189/" target="_blank">
+                <img src="images/linkedin.png" >
+            </a>
+            <a href="https://github.com/lxxzh" target="_blank">
+                <img src="images/github.png" >
+            </a>
+        </div>
+    </footer><!--RODAPÉ-->
+    <script src="js/jquery.js" ></script>
+    <script src="js/menu_responsivo.js" ></script>
+    <script src="js/search-venda.js" ></script>
+    <script src="js/menu_scroll.js"></script>
+    <script src="js/scrollDepoimentos.js"></script>
+</body>
+</html>

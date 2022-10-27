@@ -1,0 +1,1028 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/****CABECALHO DO SITE****/
+header{
+    padding: 20px 1% 20px 1%;
+    height: 115px;
+    background-color: black;
+}
+
+header .logo img{
+    position: relative;
+    width: 320px;
+    float: left;
+    top: -10px;
+}
+
+header .desktop-menu{
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .desktop-menu ul{
+    list-style-type: none;
+}
+
+header .desktop-menu ul li{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+header .desktop-menu ul li a{
+    color: #00cccf;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header .mobile-menu{
+    margin-top: 40px;
+    float: right;
+    width: 45px;
+    height: 45px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url('../images/img-mobile.png');
+    display: none;
+}
+
+header .mobile-menu ul{
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 115px;
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    background-color: #dad3d3;
+}
+
+.mobile-menu ul li:hover{
+    background-color: #938f8f;
+    border: 3px solid #030303;
+    font-weight: bold;
+}
+
+header .mobile-menu li{
+    font-size: 21px;
+    padding: 10px 0;
+    color: black;
+}
+
+header .mobile-menu li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/****BANNER PRINCIPAL****/
+
+section.banner{
+    width: 100%;
+    height: calc(100vh - 85px);
+    min-height: 500px;
+    max-height: 800px;
+    background-color: black;
+    background-image: url('../images/banner3.png');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+section .text-banner{
+    padding: 30px;
+}
+
+section .text-banner-single{
+    background-color: #0e7d7f;
+    color: rgb(255, 255, 255);
+    width: 180px;
+    height: 38px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 12px;
+    text-align: left;
+    line-height: 38px;
+    position: relative;
+    top: 45px;
+    left: 6em;
+    padding: 0 18px;
+    border-radius: 100px 0px 100px 0px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+section .text-banner-single:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0e7d7f;
+    border: 3px solid #0e7d7f;
+    font-size: 15px;
+    transition: 0.4s all;
+    transform: scale(1.02, 1.02);
+}
+
+section .text-banner-single:nth-of-type(1){
+    width: 180px;
+}
+
+section .text-banner-single:nth-of-type(2){
+    width: 140px;
+    position: relative;
+    left: 5em;
+}
+section .text-banner-single:nth-of-type(3){
+    width: 92px;
+    position: relative;
+    left: 4em;
+}
+
+/****VEICULOS EM DESTAQUE****/
+section.veiculos-destaque .container{
+    max-width: 800px;
+    padding: 40px 0;
+}
+
+section.veiculos-destaque{
+    padding: 40px 0.6%;
+    
+}
+
+section.veiculos-destaque > h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-section{
+	width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+	padding: 20px 0;
+	display: flex;
+}
+
+.vitrine-destaque{
+    width: 100%;
+    text-align: center;
+	align-items: center;
+}
+
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding: 8em;
+    border-left: 6px solid white;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.1em;
+}
+
+.vitrine-destaque h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    font-style: italic;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vitrine-destaque p{
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vitrine-destaque a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #0e7d7f;
+    color: white;
+    width: 130px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    border: 3px solid #0e7d7f;
+    border-radius: 5px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.vitrine-destaque a:hover{
+    background-color: white;
+    color: #0e7d7f;
+}
+
+/****SERVICOS E DEPOIMENTOS****/
+.servicos-descricao{
+    display: flex;
+}
+
+.half1{
+    width: 50%;
+    padding: 85px 81px;
+    background: #1a1b1b;
+    color: white;
+    
+}
+
+.half1-wraper{
+    text-align: left;
+    display: inline-block;
+    
+}
+
+.half1-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 35px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.half1-wraper ul{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.half1-wraper li{
+    font-size: 17px;
+    margin-left: 18px;
+    font-weight: 300;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.half1-wraper a{
+    margin-left: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0e7d7f;
+    color: white;
+    width: 100px;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #0e7d7f;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.half1-wraper a:hover{
+    background-color: white;
+    color: #0e7d7f;
+}
+
+.half2{
+    width: 50%;
+    text-align: left;
+    padding: 68px 81px;
+    color:#0e7d7f;
+    background: #b9b9b9;
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 35px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.half2 .depoimento-single{
+    margin-top: 20px;
+}
+
+.depoimento-single p{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.navigation{
+     margin-top: 20px;
+     width: 100%;
+     max-width: 700px;
+}
+
+.arrows{
+    float: left;
+}
+.navigation img{
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.nome-depoimento{
+    float: right;
+    color: #0e7d7f;
+    font-size: 18px;
+    margin-top: 36px;
+}
+
+/****CONTATO****/
+section.contato{
+    padding: 60px 2%;
+    border-top: 2px solid black;
+}
+
+section.contato h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.contato .input-wraper{
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid gray;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+section.contato textarea{
+    width: 100%;
+    border: 1px solid gray;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+    border-radius: 5px;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+    float: none;
+}
+
+section.contato input[type=submit]{
+    background-color: #0e7d7f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90px;
+    line-height: 30px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #0e7d7f;
+}
+
+section.contato input[type=submit]:hover{
+        background-color: white;
+        color: #0e7d7f;
+}
+
+/****RODAPÉ DO SITE****/
+footer{
+    padding: 40px 2%;
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+footer .container-social{
+    text-align: center;
+}
+
+footer .container-social img{
+    width: 50px;
+    padding: 5px;
+    margin-top: 1.5%;
+}
+
+footer .container-social img:hover{
+	transition: 0.7s all;
+	transform: scale(1.3, 1.3);
+}
+
+footer .container-social a{
+    text-decoration: none;
+}
+
+/****PAGINA DE VENDA****/
+section.venda{
+    padding: 60px 0;
+    min-height: 90%;
+}
+
+section.venda>h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-venda{
+    margin-top: 20px;
+}
+
+.sidebar{
+    float: left;
+    width: 25%;
+}
+
+.search1{
+    width: 100%;
+}
+
+.search1 h2{
+    font-size: 22px;
+    color: black;
+    font-weight: normal;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    background: white;
+    border: 1px solid #b9b9b9;
+    margin-top: 8px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    width: 0;
+    height: 20px;
+    border-radius: 20px;
+    background: #bfbfbf;
+}
+
+.pointer-barra{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left:  0;
+    top: -4px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #e6e6e6;
+    border: 1px solid #999999;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa p{
+    color: #262626;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 40px;
+}
+
+.search2 h2{
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.search2 .form-venda-wraper{
+    margin-top: 8px;
+    align-items: center;
+}
+
+.form-venda-wraper input[type=checkbox]{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    cursor: pointer;
+   
+}
+
+.form-venda-wraper span{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+/****VITRINE DE VEICULOS****/
+section .vitrine-venda{
+    width: 75%;
+    float: left;
+    margin-top: 10px;
+}
+
+section .venda-flex{
+    display: flex;
+}
+
+.vitrine-venda .car-single{
+    background-position:center;
+    background-size: cover;
+    width: 60%;
+    padding: 8em;
+}
+
+.vitrine-venda .description-car{
+    width: 40%;
+    padding: 40px 20px;
+    background-color: #f1f3f4;
+}
+
+.vitrine-venda .description-car h2{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vitrine-venda .description-car p{
+    margin-top: 8px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vitrine-venda .description-car a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 28px;
+    margin-top: 8px;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.vitrine-venda .description-car a:hover{
+    background-color: white;
+    color: black;
+}
+
+/****PAGINA VENDA SINGLE****/
+
+
+section.venda-single-mclaren .container{
+    padding: 20px 20px;
+    max-width: 1280px;
+}
+
+section.venda-single-mclaren>h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px ;
+    
+}
+
+.info-veiculo{
+    display: inline-block;
+    width: 60%;
+}
+
+.foto-destaque{
+    width: 100%;
+    display: flex;
+    padding-top:60%;
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.descricao-veiculo{
+    display: inline-block;
+    padding: 4.7em 0 0 3em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.descricao-veiculo p{
+    margin-top: 20px;
+    max-width: 300px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.descricao-veiculo a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.descricao-veiculo a:hover{
+    background-color: white;
+    color: black;
+}
+
+.nav-galeria-parent{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+    background-color: #e6e6e6;
+}
+
+
+.arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-image: url('../images/arrow-left.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.arrow-right-nav{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-image: url('../images/arrow-right.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+}
+
+.info-bread{
+    padding: 20px 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-bread a{
+    text-decoration: none;
+    color: black;
+}
+
+.info-bread span{
+    padding: 0 30px;
+}
+.info-bread a:last-child{
+    color: #00cccf;
+    border-bottom: 2px solid #00cccf;
+}
+
+.nav-galeria{
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-galeria-wraper{
+	width: 200%;
+}
+
+.mini-img-wraper{
+	float: left;
+	padding: 4px;
+    cursor: pointer;
+	width:calc(33.3% * (100 / 200));
+}
+
+.mini-img{
+	width: 100%;
+	cursor: pointer;
+	padding-top:60%;
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/****PAGINA SOBRE****/
+section.sobre{
+    min-height: 90%;
+    padding: 40px 2% 20px 2%;
+}
+
+section.sobre>h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section.sobre .container{
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+section.sobre .img-destaque-sobre img{
+    width: 100%;
+    border: 2px solid black;
+}
+
+section.sobre .descricao-autor{
+    margin-top: 20px;
+}
+
+section.sobre .descricao-autor h2{
+    font-size: 20px;
+}
+
+.descricao-autor p{
+    margin: 20px 0 20px 0;
+}
+
+
+/*******RESPONSIVIDADE DO SITE***************/
+
+
+
+@media screen and (max-width: 1600px) {
+    .sidebar{
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+    }
+
+    .search1{
+        width: 350px;
+    }
+
+    section .vitrine-venda{
+        width: 70%;
+        float: right;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    .sidebar{
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+    }
+
+    .search1{
+        width: 330px;
+    }
+
+    section .vitrine-venda{
+        width: 65%;
+        float: right;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .vitrine-destaque .carro-img{
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+    }
+    
+    .vitrine-destaque .info-carro{
+        padding: 10px;
+    }
+
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .container-section{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .search1{
+        width: 90%;
+        display: inline-block;
+    }
+
+    .search2{
+        text-align: left;
+        display: inline-block;
+    }
+    
+    section .vitrine-venda{
+        text-align: center;
+        width: 100%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .info-veiculo{
+        width: 100%;
+    }
+
+    .descricao-veiculo{
+        text-align: center;
+        padding: 0;
+    }
+
+    .descricao-veiculo p{
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        min-height: 110px;
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
+
+    header .mobile-menu{
+        margin-top: 20px;
+        margin-right: 10px;
+        display: block;
+    }
+
+    section.vitrine-destaque{
+        margin: 0 auto;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1{
+        text-align: left;
+        padding: 80px 100px;
+    }
+
+    .half1, .half2{
+        width: 100%;
+    }
+
+    .half1-wraper a{
+        margin-left: 25px;
+        display: inline-block;
+        vertical-align: bottom;
+        text-align: center;
+    }
+
+    section .venda-flex{
+        width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+
+    .vitrine-venda .car-single{
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .vitrine-venda .description-car{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 580px){
+    section.banner{
+        height: 60vh;
+        min-height: 0;
+        max-height: 600px;
+    }
+
+    section .text-banner-single{
+        font-size: 13px;
+        top: 4px;
+        left: 3em;
+    }
+    
+    section .text-banner-single:nth-of-type(1){
+        width: 150px;
+    }
+    
+    section .text-banner-single:nth-of-type(2){
+        left: 2em;
+        width: 100px;
+    }
+    section .text-banner-single:nth-of-type(3){
+        left: 0.6em;
+        width: 85px;
+    }
+
+    section .container-section{
+        padding: 0;
+    }
+    
+    .half1-wraper a{
+        margin-left: 5px;
+    }
+
+    .sidebar{
+        margin-bottom: 0px;
+    }
+
+    .vitrine-venda .description-car{
+        padding: 10px 10px;
+    }
+}
