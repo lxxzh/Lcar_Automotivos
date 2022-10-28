@@ -95,7 +95,7 @@ $(function() {
                     let ellOff = $('.mini-img-wraper').eq(curIndex*3).offset().left - $('.nav-galeria-wraper').offset().left;
                     $('.nav-galeria').animate({'scrollLeft':ellOff+'px'});
                 }else{
-                    alert("Voce está no final");
+                    /*alert("Voce está no final");*/
                 }
             })
     
@@ -105,7 +105,7 @@ $(function() {
                     let ellOff = $('.mini-img-wraper').eq(curIndex*3).offset().left - $('.nav-galeria-wraper').offset().left;
                     $('.nav-galeria').animate({'scrollLeft':ellOff+'px'});
                 }else{
-                    alert("Você está no começo")
+                    /*alert("Você está no começo")*/
                 }
             })
         }
